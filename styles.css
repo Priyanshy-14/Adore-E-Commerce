@@ -6,6 +6,154 @@
 
 }
 
+@media (max-width: 700px) {
+
+  /* NAVIGATION */
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  nav img {
+    width: 180px;
+    padding: 0;
+  }
+
+  .nav-links {
+    width: 100%;
+    text-align: left;
+  }
+
+  .nav-links ul {
+    padding: 0;
+  }
+
+  .nav-links ul li {
+    display: block;
+    padding: 10px 0;
+  }
+
+  /* HEADER SECTION */
+  .header {
+    min-height: 60vh;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .home-text {
+    width: 90%;
+    left: 5%;
+    top: 20%;
+    height: auto;
+    padding: 5%;
+  }
+
+  .home-text h1 {
+    font-size: 4.5vh;
+  }
+
+  .home-text h5 {
+    font-size: 2vh;
+  }
+
+  .btn {
+    width: auto;
+    font-size: 2vh;
+  }
+
+  /* ABOUT SECTION */
+  .about-bg {
+    padding: 5%;
+  }
+
+  .about-bg img {
+    width: 100%;
+    height: auto;
+  }
+
+  .about-text {
+    position: static;
+    width: 100%;
+    margin-top: 20px;
+    padding: 5%;
+    box-shadow: none;
+  }
+
+  .about-text h2 {
+    font-size: 5vh;
+  }
+
+  /* CATEGORY SECTION */
+  .products,
+  .items {
+    flex-direction: column;
+    align-items: center;
+    gap: 5vh;
+    padding: 0 5% 5%;
+  }
+
+  .Bracelets,
+  .Rakhi,
+  .ser1,
+  .ser2,
+  .ser3,
+  .ser1txt,
+  .ser2txt,
+  .ser3txt {
+    width: 100%;
+    height: auto;
+  }
+
+  /* DECOR SECTION */
+  .Decor {
+    flex-direction: column;
+    padding: 5%;
+    height: auto;
+    gap: 3vh;
+  }
+
+  .text {
+    max-width: 100%;
+  }
+
+  .extra {
+    width: 100%;
+    height: auto;
+  }
+
+  .img1 img,
+  .img2 img {
+    position: static;
+    transform: none;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  /* SERVICES SECTION */
+  .services h1 {
+    font-size: 5vh;
+    padding-top: 5vh;
+  }
+
+  .ser1txt h3,
+  .ser2txt h3,
+  .ser3txt h3 {
+    width: 100%;
+  }
+
+  /* FOOTER */
+  .footer {
+    padding: 30px 10px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+}
 
 
 .header {
@@ -241,7 +389,7 @@ nav img{
 
 .Decor {
   width: 100%;
-  height: 610px;
+  height: 650px;
   background-color: #e3e2e2;
   display: flex;
   justify-content: space-between;
@@ -332,17 +480,22 @@ nav img{
 }
 
 .items{
-    padding-left: 7%;
+  padding-left: 7%;
   display: flex;
   gap: 3%;
-  padding-bottom: 7%;
+  padding-bottom: 2%;
 
 }
+
+.items + .items{
+  padding-left: 7%;
+}
+
 .ser1,
 .ser2,
 .ser3{
     position: relative;
-  width: 300px;
+  width: 415px;
   height: 300px;
   border-radius: 12px;
   overflow: hidden;
@@ -384,6 +537,41 @@ background-image: url(images/ser3.jpg);}
   transform: scale(1.1); /* only background zooms */
 }
 
+.ser1txt, .ser2txt, .ser3txt {
+  width: 415px;
+  box-sizing: border-box;
+}
+
+.ser1 h3,
+.ser2 h3,
+.ser3 h3,
+.ser1 p,
+.ser2 p,
+.ser3 p {
+  width: 100%;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+
+.ser1txt h3,
+.ser2txt h3,
+.ser3txt h3 {
+    position: relative;
+    width: 415px;
+    padding-bottom: 1vh;
+
+}
+
+
+.ser1 p,
+.ser2 p,
+.ser3 p {
+  font-size: 12px;
+  color: #333;
+  z-index: 2;
+  
+}
 
 
 
