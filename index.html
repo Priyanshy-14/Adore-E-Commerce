@@ -1,143 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Adoré</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+
+
+
 </head>
+
 <body>
+  
 
-
+  <!-- HEADER SECTION -->
   <section class="header">
-    <nav >
-      <a href="index.html"> 
-        <img src="images/LOGO.webp" alt="logo"></a>
-        <div class="nav-links">
-          <ul>
-            <li> <a href=""> HOME </a></li>
-            <li> <a href=""> ABOUT </a></li>
-            <li> <a href=""> PRODUCTS </a></li>
-            <li> <a href=""> SERVICES </a></li>
-            <li> <a href=""> CONTACT </a></li>
-          </ul> 
-        </div>
+    <nav class="navbar">
+      <a href="index.html">
+        <img src="images/LOGO.webp" alt="Adoré Logo" />
+      </a>
+      <div class="nav-links">
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#products">PRODUCTS</a></li>
+          <li><a href="#services">SERVICES</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </div>
     </nav>
 
-<div class="home-text">
-  <h1> Discover Adoré</h1>
-  <h5> Elegant whisper of love in every accessory </h5>
-  <button class="btn"><a href=""> SEE PRODUCTS </a></button>
-</div>
+    <div class="home-text">
+      <h1>Discover Adoré</h1>
+      <h5>Elegant whisper of love in every accessory</h5>
+      <button class="btn"><a href="#products">SEE PRODUCTS</a></button>
+    </div>
   </section>
 
 
+  <!-- Your content -->
 
-  <section class="About">
+<script>
+  const nav = document.querySelector("nav");
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 50) {
+      nav.classList.add("scrolled");
+    } else {
+      nav.classList.remove("scrolled");
+    }
+  });
+</script>
+</body>
+
+
+  <!-- ABOUT SECTION -->
+  <section class="About" id="about">
     <div class="about">
       <div class="about-bg">
-         <img src="images/about-bg.webp" alt="" class="">
+        <img src="images/about-bg.webp" alt="About Adoré Image" />
       </div>
-        <div class="about-text">
-        <h2> About Adoré </h2>
-        <hr>
+      <div class="about-text">
+        <h2>About Adoré</h2>
+        <hr />
         <p>
           At Adoré, every piece tells a story of love, tradition, and elegance. We specialize in crafting accessories and Rakhis that capture the essence of timeless beauty and heartfelt emotions. With our designs, we aim to bridge the gap between tradition and contemporary grace, offering pieces that resonate with memories and sentiments. Let Adoré be part of your journey to celebrate the connections that matter most.
         </p>
-
       </div>
-</div>
+    </div>
   </section>
 
-
-
-
-  <section class="cat">
-    <h1> CATEGORIES</h1>
-      <div class="products">
-          <div class="Bracelets">
-              <h3> Bracelets</h3>
-          </div>
-
-          <div class="Rakhi">
-              <h3> Rakhi</h3>
-          </div>
+  <!-- CATEGORY SECTION -->
+  <section class="cat" id="products">
+    <h1>CATEGORIES</h1>
+    <div class="products">
+      <div class="Bracelets">
+        <h3>Bracelets</h3>
       </div>
+      <div class="Rakhi">
+        <h3>Rakhi</h3>
+      </div>
+    </div>
   </section>
 
-<section class="Decor">
-  <div class="text">
-    <h1>Celebrate Love with<br> Adoré</h1>
-    <hr>
-    <h3>Tradition meets elegance in every creation</h3>
-  </div>
-  <div class="extra">
-    <div class="img1">
-      <img src="images/img1.webp" alt="">
+  <!-- DECOR SECTION -->
+  <section class="Decor">
+    <div class="text">
+      <h1>Celebrate Love with<br />Adoré</h1>
+      <hr />
+      <h3>Tradition meets elegance in every creation</h3>
     </div>
-    <div class="img2">
-      <img src="images/img2.webp" alt="">
+    <div class="extra">
+      <div class="img1">
+        <img src="images/img1.webp" alt="Decorative Image 1" />
+      </div>
+      <div class="img2">
+        <img src="images/img2.webp" alt="Decorative Image 2" />
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-
-
-<section class="services">
-  <h1>SERVICES</h1>
-  <div class="items">
-    <div class="ser1">
+  <!-- SERVICES SECTION -->
+  <section class="services" id="services">
+    <h1>SERVICES</h1>
+    <div class="items">
+      <div class="ser1"></div>
+      <div class="ser2"></div>
+      <div class="ser3"></div>
     </div>
-
-    <div class="ser2">   
+    <div class="items">
+      <div class="ser1txt">
+        <h3>Bracelets</h3>
+        <p>Explore our unique bracelet designs, perfect for making every moment special.</p>
+      </div>
+      <div class="ser2txt">
+        <h3>Elegant Rakhi Collection</h3>
+        <p>Celebrate the beautiful bond of Raksha Bandhan with our thoughtfully crafted Rakhis.</p>
+      </div>
+      <div class="ser3txt">
+        <h3>Personalized Gifting</h3>
+        <p>Add a personal touch to your gifts with our customizable options, perfect for any occasion.</p>
+      </div>
     </div>
+  </section>
 
-    <div class="ser3">      
-    </div>
-    
-  </div>
-  <div class="items">
-     <div class="ser1txt">
-           <h3>Bracelets</h3>
-           <p>Explore our unique bracelet designs, perfect for making every moment special.</p>
-       </div>
-
-
-       <div class="ser2txt">
-          <h3>Elegant Rakhi Collection</h3>
-          <p>Celebrate the beautiful bond of Raksha Bandhan with our thoughtfully crafted Rakhis.</p>
-       </div>
-
-       <div class="ser3txt">
-          <h3>Personalized Gifting</h3>
-          <p>Add a personal touch to your gifts with our customizable options, perfect for any occasion.</p>
-       </div>
-  </div>
-      
-
-</section>
-
-
-
-
-
-  <footer class="footer">
+  <!-- FOOTER -->
+  <footer class="footer" id="contact">
     <div class="footer-content">
-    <p>&copy; 2025 Adoré-Awhisper of love . All rights reserved.</p>
-    <ul class="footer-links">
-      <li><a href="#">Privacy Policy</a></li>
-      <li><a href="#">Terms</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </div>
-
+      <p>&copy; 2025 Adoré - A whisper of love. All rights reserved.</p>
+      <ul class="footer-links">
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
   </footer>
-  
 
 </body>
 </html>

@@ -6,154 +6,7 @@
 
 }
 
-@media (max-width: 700px) {
 
-  /* NAVIGATION */
-  nav {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px;
-  }
-
-  nav img {
-    width: 180px;
-    padding: 0;
-  }
-
-  .nav-links {
-    width: 100%;
-    text-align: left;
-  }
-
-  .nav-links ul {
-    padding: 0;
-  }
-
-  .nav-links ul li {
-    display: block;
-    padding: 10px 0;
-  }
-
-  /* HEADER SECTION */
-  .header {
-    min-height: 60vh;
-    background-position: center;
-    background-size: cover;
-  }
-
-  .home-text {
-    width: 90%;
-    left: 5%;
-    top: 20%;
-    height: auto;
-    padding: 5%;
-  }
-
-  .home-text h1 {
-    font-size: 4.5vh;
-  }
-
-  .home-text h5 {
-    font-size: 2vh;
-  }
-
-  .btn {
-    width: auto;
-    font-size: 2vh;
-  }
-
-  /* ABOUT SECTION */
-  .about-bg {
-    padding: 5%;
-  }
-
-  .about-bg img {
-    width: 100%;
-    height: auto;
-  }
-
-  .about-text {
-    position: static;
-    width: 100%;
-    margin-top: 20px;
-    padding: 5%;
-    box-shadow: none;
-  }
-
-  .about-text h2 {
-    font-size: 5vh;
-  }
-
-  /* CATEGORY SECTION */
-  .products,
-  .items {
-    flex-direction: column;
-    align-items: center;
-    gap: 5vh;
-    padding: 0 5% 5%;
-  }
-
-  .Bracelets,
-  .Rakhi,
-  .ser1,
-  .ser2,
-  .ser3,
-  .ser1txt,
-  .ser2txt,
-  .ser3txt {
-    width: 100%;
-    height: auto;
-  }
-
-  /* DECOR SECTION */
-  .Decor {
-    flex-direction: column;
-    padding: 5%;
-    height: auto;
-    gap: 3vh;
-  }
-
-  .text {
-    max-width: 100%;
-  }
-
-  .extra {
-    width: 100%;
-    height: auto;
-  }
-
-  .img1 img,
-  .img2 img {
-    position: static;
-    transform: none;
-    width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-  }
-
-  /* SERVICES SECTION */
-  .services h1 {
-    font-size: 5vh;
-    padding-top: 5vh;
-  }
-
-  .ser1txt h3,
-  .ser2txt h3,
-  .ser3txt h3 {
-    width: 100%;
-  }
-
-  /* FOOTER */
-  .footer {
-    padding: 30px 10px;
-  }
-
-  .footer-links {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-}
 
 
 .header {
@@ -166,16 +19,32 @@
 }
 
 nav{
-  
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+  top: 0;
+  padding: 10px 40px;
+   transition: all 0.3s ease;
+      background: transparent;
 
 }
+nav.scrolled {
+  position: fixed;
+ background-color: #1b262c;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  height: 100px;
+}
+
 nav img{
   padding: 3%;
   width: 300px;
+  transition: width 0.3s ease;
+}
+nav.scrolled img{
+  width: 200px;
 }
 
 .nav-links{
@@ -187,14 +56,15 @@ nav img{
   list-style: none;
   display: inline-block;
   padding: 8px 12px;
-  position: relative;
-  font-weight: 50vh;
-  font-size: 70;
-  font-display: block;
-
+  position: relative; 
+  font-size: 18px;
+  transition: 0.3s ease;
 
 }
 
+nav.scrolled ul li{
+  font-size: 15px;
+}
 .nav-links ul li a{
   color: White;
   text-decoration: none;
@@ -216,6 +86,9 @@ nav img{
 
   width: 100%;
 }
+
+
+
 .home-text{
   background: linear-gradient(rgba(194, 194, 194, 0.87), rgb(183, 178, 178)) ;
   width: 100px;
@@ -389,7 +262,7 @@ nav img{
 
 .Decor {
   width: 100%;
-  height: 650px;
+  height: 630px;
   background-color: #e3e2e2;
   display: flex;
   justify-content: space-between;
