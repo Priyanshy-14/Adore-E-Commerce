@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 
 </head>
@@ -23,6 +23,7 @@
         <img src="images/LOGO.webp" alt="Adoré Logo" />
       </a>
       <div class="nav-links">
+        <i class="fa-solid fa-xmark"></i>
         <ul>
           <li><a href="#">HOME</a></li>
           <li><a href="#about">ABOUT</a></li>
@@ -31,6 +32,7 @@
           <li><a href="#contact">CONTACT</a></li>
         </ul>
       </div>
+      <i class="fa-solid fa-bars"></i>
     </nav>
 
     <div class="home-text">
@@ -41,8 +43,6 @@
   </section>
 
 
-  <!-- Your content -->
-
 <script>
   const nav = document.querySelector("nav");
   window.addEventListener("scroll", () => {
@@ -52,6 +52,20 @@
       nav.classList.remove("scrolled");
     }
   });
+
+
+
+  const navLinks = document.getElementById("navLinks");
+
+  function showMenu() {
+    navLinks.style.right = "0";
+  }
+
+  function hideMenu() {
+    navLinks.style.right = "-200px";
+  }
+
+  
 </script>
 </body>
 
