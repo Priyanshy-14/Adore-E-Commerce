@@ -676,27 +676,43 @@ background-image: url(images/ser3.jpg);}
   .Decor {
     flex-direction: column;
     align-items: center;
-    padding: 5vh;
-    min-height: 500px;
+    padding: 2vh 0vh;
+    min-height: auto;
+    height: 500px;
     width: 100%;
   }
 
   .Decor h1{
     text-align: center;
     font-size: 20px;
-
+     margin-bottom: 1vh;
   }
   .Decor h3 {
     text-align: center;
-    font-size: 12px;
+    font-size:11px;
+    margin-top: 0.5vh;
+    color: #333;
   }
 
   .extra {
-    position: relative;
+    position:absolute;
     width: 100%;
-    height: 400px; /* adjust as needed for spacing */
-
+    height: auto; /* adjust as needed for spacing */
+    margin-top: 150px;
   }
+  .text {
+    margin-top: 2vh;
+    flex: 1;
+    max-width: 100%;
+  }
+  .Decor hr {
+    width: 100px;
+    height: 2px; /* Optional: add height for visibility */
+    background-color: rgb(119, 117, 117);
+    border: none;
+    margin: 2vh auto; /* centers it horizontally */
+  }
+
 
   .img1 img,
   .img2 img {
@@ -711,14 +727,14 @@ background-image: url(images/ser3.jpg);}
   .img1 img {
     transform: rotate(-5deg) scale(1.05);
     top: 0;
-    left: 15%;
+    left: 10%;
 
   }
 
   .img2 img {
-    transform: rotate(3deg) scale(1.05);
-    top: 40px;
-    left: 35%;
+    transform: rotate(3deg) scale(1.07);
+    top: 70px;
+    left: 40%;
 
   }
 
