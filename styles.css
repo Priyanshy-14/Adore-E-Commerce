@@ -522,7 +522,7 @@ background-image: url(images/ser3.jpg);}
     background-size: cover;
     background-position: center;
     top: 101px;
-    width: 320px;
+    width: 100%;
     position: absolute;
     text-align: center;
     min-height: 68.5vh;
@@ -547,9 +547,9 @@ background-image: url(images/ser3.jpg);}
     padding: 6px 12px;
     font-size: 16px;
     margin-top: 10px;
-    left: 27%;
-    transform: translateX(-50%);
-    position: relative;
+   position: static; /* or just remove this line */
+   left: auto;
+   transform: none;
     border: 1.5px solid #000000;
     background-color: transparent;
 
@@ -632,10 +632,11 @@ background-image: url(images/ser3.jpg);}
   background: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)) ;
   color: #000000;
   position: absolute;
-  top: 110%;
+  top: 120%;
   left: 14%;
+  right: 14%;
   text-align:justify;
-  width:215px;
+  width: 70%;
   border-radius: 9px;
   padding: 3vh 2vh;
   box-shadow: 2px 2px 5px rgb(120, 118, 118);
@@ -655,11 +656,14 @@ background-image: url(images/ser3.jpg);}
   
   
 }
+.about-bg{
+  height: auto;
+}
 
 .about-text p{
   padding-top: 3vh;
   padding-bottom: 2vh; 
-  font-size: small;
+  font-size: medium;
 
 }
 
@@ -791,6 +795,7 @@ background-image: url(images/ser3.jpg);}
   .ser1 p,
   .ser2 p,
   .ser3 p {
+    font-size: small;
     padding: 0 10px;
     box-sizing: border-box;
     color: #333;
